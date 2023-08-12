@@ -71,7 +71,8 @@ Player can:
  - rotate a tile counterclockwise or clockwise
  - swap two tiles
 
-     
+Example:  
+
     A right (clockwise) rotation yields:
          _ _ _ _
         |   4   |
