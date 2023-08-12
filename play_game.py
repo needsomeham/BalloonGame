@@ -1,11 +1,14 @@
 import GameBoard as gb
 
 
-def main_kickoff():
+def find_me_a_solution(game:gb) -> bool:
     solution_found = False
-    # while not solution_found:
-    #
 
+    # solve the game here :)
+
+    if solution_found:
+        print('Nice')
+        return True
 
 
 if __name__ == '__main__':
@@ -22,6 +25,9 @@ if __name__ == '__main__':
     # now we know it works, shuffle the board
     game.shuffle_board()
 
-    # lets look for a solution :)
+    # check that shuffle is not a solution
     game.check_solution(verbose=True)
     print(f'number of matching cards: {game.num_matching()}')
+
+    # find a solution
+    find_me_a_solution(game)
