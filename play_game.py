@@ -61,7 +61,7 @@ def find_me_a_solution(game:gb) -> bool:
                 print(f"Total number of solutions found {num_solutions_found}.")
                 print(f"Solved board:")
                 old_game.print_board()
-                if permuted_id != starting_tiles:
+                if permuted_id != starting_tiles_str:
                     print(f"Solution does not match starting tiles, continuing to search for starting tile array.\n")
                 else:
                     print(f"Found matching tile array!")
@@ -76,9 +76,15 @@ def find_me_a_solution(game:gb) -> bool:
 
 if __name__ == '__main__':
     # build a functioning board to test on!
-    global starting_tiles
     starting_tiles = [1, 4, 3, 2, 3, 2, 2, 4, 2, 3, 5, 2, 3, 5, 2, 5, 2, 4,
                      1, 5, 5, 3, 3, 4, 2, 5, 3, 1, 1, 3, 2, 5, 3, 4, 1, 3]
+
+    global starting_tiles_str
+    starting_tiles_str = ""
+    for num in starting_tiles:
+        starting_tiles_str += str(num)
+
+    print(starting_tiles_str)
     game = gb.GameBoard(starting_tiles)
 
 
