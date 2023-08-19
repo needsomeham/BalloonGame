@@ -106,3 +106,30 @@ Example:
 
 
 Good luck!
+
+
+## Solution:
+Console solution output:  
+  
+        Solution found after 7942579 iterations checked.
+        Total number of solutions found 247.
+        Solved board:
+          _ _ _ _     _ _ _ _     _ _ _ _  
+         |   1   |   |   3   |   |   2   | 
+         | 2   4 |   | 4   2 |   | 2   3 | 
+         |   3   |   |   2   |   |   5   | 
+          _ _ _ _     _ _ _ _     _ _ _ _  
+          _ _ _ _     _ _ _ _     _ _ _ _  
+         |   3   |   |   2   |   |   5   | 
+         | 5   5 |   | 5   4 |   | 4   3 | 
+         |   2   |   |   1   |   |   3   | 
+          _ _ _ _     _ _ _ _     _ _ _ _  
+          _ _ _ _     _ _ _ _     _ _ _ _  
+         |   2   |   |   1   |   |   3   | 
+         | 1   5 |   | 5   3 |   | 3   4 | 
+         |   3   |   |   2   |   |   1   | 
+          _ _ _ _     _ _ _ _     _ _ _ _  
+        Found tile array matching starting solution!
+        Total time algo ran: 293.89484770000854s
+  
+Clearly the time the alog runs varies quite heavily as it relies on random steps.
