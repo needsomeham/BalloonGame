@@ -1,5 +1,4 @@
-import heapq
-import random
+import heapq, random, time
 import GameBoard as gb
 
 
@@ -17,6 +16,7 @@ def find_me_a_solution(game:gb) -> bool:
     print("\n\n"
           "--------------------------------------\n"
           "Looking for solution to shuffled board")
+    start_time = time.perf_counter()
     counter = 0
     num_solutions_found = 0
     all_edges_tuple = [(0,1), (0,3), (1,2), (1,4), (2,5), (3,4), (3,6), (4,5), (4,7), (5,8), (6,7), (7,8)]
@@ -64,7 +64,8 @@ def find_me_a_solution(game:gb) -> bool:
                 if permuted_id != starting_tiles_str:
                     print(f"Solution does not match starting tiles, continuing to search for starting tile array.\n")
                 else:
-                    print(f"Found matching tile array!")
+                    print(f"Found tile array matching starting solution!")
+                    print(f"Total time algo ran: {time.perf_counter() - start_time}s")
                     return True
             else:
                 cache_ids[permuted_id] = True
